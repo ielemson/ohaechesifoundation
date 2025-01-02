@@ -1,13 +1,13 @@
 @extends('layouts.admin')
 
 @section('title')
-<a href="{{ route("team_profiles.create") }}">Create Team</a>
+Team
 @endsection
 @section('content')
 <ul>
    <div class="row">
     <div class="col-md-12">
-       
+        <a href="{{ route("team_profiles.create") }}">Create Team</a>
        @if (count($profiles)>0)
        <h5 class="mb-4">{{ __('Profile Card')}}</h5>
        <div class="row">
