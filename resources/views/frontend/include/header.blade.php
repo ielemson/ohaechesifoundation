@@ -59,7 +59,7 @@
                            
                            
                             <li>
-                                <a href="#0">Our Programs</a>
+                                <a href="{{ route("ourprograms") }}">Our Programs</a>
                             </li>
                             <li>
                                 <a href="#0">Events</a>

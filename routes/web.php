@@ -24,6 +24,7 @@ Route::get('/contact-us', [App\Http\Controllers\GeneralController::class, 'conta
 Route::get('/about-us', [App\Http\Controllers\GeneralController::class, 'aboutus'])->name('aboutus');
 Route::get('/donate', [App\Http\Controllers\GeneralController::class, 'donatenow'])->name('donatenow');
 Route::get('/team-single/{slug}', [App\Http\Controllers\GeneralController::class, 'singleteam'])->name('team.single');
+Route::get('/ourprograms', [App\Http\Controllers\GeneralController::class, 'ourprograms'])->name('ourprograms');
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 Route::get('/reload-captcha', [ContactController::class, 'reloadCaptcha']);
 

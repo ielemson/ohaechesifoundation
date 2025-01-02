@@ -2738,7 +2738,7 @@ input {
   opacity: 1;
 }
 .banner-two__content {
-  padding-top: 260px;
+  padding-top: 100px;
   padding-bottom: 160px;
   text-align: center;
   position: relative;
@@ -2932,14 +2932,15 @@ input {
 
 .service__content h3 {
   margin-bottom: 15px;
+  text-align: center !important;
 }
 .service__item {
-  display: flex;
   align-items: center;
   gap: 15px;
   padding: 20px 10px;
   transition: var(--transition);
   background-color: var(--heading-color);
+  text-align: center !important;
 }
 .service__item.active {
   background-image: url(../images/shape/service.png);

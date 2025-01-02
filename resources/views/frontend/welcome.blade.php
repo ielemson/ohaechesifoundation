@@ -21,6 +21,10 @@ $setting = \App\Models\Setting::find(1);
         <!-- Mission area start here -->
       @include("frontend.include.mission")
         <!-- Mission area end here -->
+
+        <!-- Mission area start here -->
+      @include("frontend.include.mission_vision")
+        <!-- Mission area end here -->
 @if (count($teams)> 0)
        <!-- Profile area start here -->
        @include("frontend.include.our_team")

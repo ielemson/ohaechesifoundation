@@ -1,10 +1,10 @@
-<section class="mission-area bg-image pt-120 pb-120" data-background="assets/images/bg/mission-bg.jpg">
+<section class="mission-area pt-60 pb-60 sub-bg">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <div class="section-header mb-30">
                     <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <i class="fa-regular fa-angles-left pe-1"></i> Our MISSION <i
+                        <i class="fa-regular fa-angles-left pe-1"></i> Core Areas <i
                             class="fa-regular fa-angles-right ps-1"></i>
                     </h5>
                     <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">

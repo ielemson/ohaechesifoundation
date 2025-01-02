@@ -36,7 +36,8 @@ class GeneralController extends Controller
      */
     public function aboutus()
     {
-        return view("frontend.aboutus");
+        $teams = TeamProfile::where("status","active")->get();
+        return view("frontend.aboutus",compact("teams"));
     }
 
     /**
@@ -69,9 +70,9 @@ class GeneralController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function ourprograms()
     {
-        //
+        return view("frontend.ourprograms");
     }
 
     /**

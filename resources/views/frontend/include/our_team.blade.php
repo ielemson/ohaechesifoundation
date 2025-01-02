@@ -1,5 +1,5 @@
  <!-- Team area start here -->
- <section class="team-area pt-120 pb-120 sub-bg">
+ <section class="team-area pt-60 pb-60 sub-bg">
     <div class="container">
         <div class="section-header mb-60 text-center">
             <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
