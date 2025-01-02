@@ -19,7 +19,7 @@ class ContactMessage extends Mailable
 
     public function build()
     {
-        return $this->markdown('emails.contactmessage');
+        return $this->markdown("frontend.emails.contactmessage");
         
     }
 }
