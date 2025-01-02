@@ -2,28 +2,16 @@
 
 @section('content')
 <div class="login-logo">
-    <a href="{{ url('/') }}"><b>Laravel</b>Admin</a>
+    <a href="{{ url('/') }}"><b>Ohaechesi Foundation
+    </b>Admin</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-        <p class="login-box-msg">Create a new account</p>
+        <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="{{ route('register') }}" method="post">
+        <form action="{{ route('login') }}" method="post">
             @csrf
-            <div class="input-group mb-3">
-                <input id="name" type="text" placeholder="Name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>                <div class="input-group-append">
-                    <div class="input-group-text">
-                    <span class="fas fa-user"></span>
-                    </div>
-                </div>
-                @error('name')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-            </div>
-
             <div class="input-group mb-3">
                 <input id="email" type="email" placeholder="E-mail" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                 <div class="input-group-append">
@@ -37,8 +25,6 @@
                     </span>
                 @enderror
             </div>
-
-
             <div class="input-group mb-3">
                 <input id="password" type="password" placeholder="Password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                 <div class="input-group-append">
@@ -52,27 +38,25 @@
                     </span>
                 @enderror
             </div>
-
-            <div class="input-group mb-3">
-                <input id="password-confirm" type="password" placeholder="Confirm Password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                <div class="input-group-append">
-                    <div class="input-group-text">
-                        <span class="fas fa-lock"></span>
+            <div class="row" style="margin-left: 10px;">
+                <div class="col-8">
+                    <div class="icheck-primary">
+                        {{-- <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}> --}}
+                        <label for="remember">
+                            <a href="{{route('welcome')}}" class="text-center">Go Back</a>
+                        </label>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="input-group mb-3">
-                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                <!-- /.col -->
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                </div>
+                <!-- /.col -->
             </div>
         </form>
-        <p class="mb-0">
-            <a href="{{route('login')}}" class="text-center">Already have an account?</a>
-        </p>
+        
     </div>
-    <!-- /.Register-card-body -->
+    <!-- /.login-card-body -->
 </div>
-
 
 @endsection
