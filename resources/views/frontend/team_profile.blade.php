@@ -20,10 +20,10 @@ $setting = \App\Models\Setting::find(1);
                         <div class="team-single__image">
                             <img src="{{ asset('assets/images/team/' .$teamprofile->picture) }}" alt="{{ $teamprofile->name }}">
                             <div class="team-info">
-                                <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#0" class="active"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="#0"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="{{ $teamprofile->facebook }}"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="{{ $teamprofile->instagram }}" class=""><i class="fa-brands fa-instagram"></i></a>
+                                {{-- <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a> --}}
+                                {{-- <a href="#0"><i class="fa-brands fa-pinterest-p"></i></a> --}}
                             </div>
                         </div>
                     </div>
