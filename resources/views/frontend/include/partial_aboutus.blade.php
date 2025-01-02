@@ -23,7 +23,7 @@
                                 class="fa-regular fa-angles-right ps-1"></i>
                         </h5>
                         <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            About Ohaechesi Foundation</h2>
+                            Ohaechesi Foundation</h2>
                         <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms" style="text-align: justify">
                           {!! $setting->about !!}
                     </div>

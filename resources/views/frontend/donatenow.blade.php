@@ -24,14 +24,14 @@ $setting = \App\Models\Setting::find(1);
                         <div class="blog-single__review shadow p-4 mt-60">
                             <div class="donation-amount-area">
                                 <div class="input-box pb-30 bor-bottom mb-30">
-                                    <span>$</span>
-                                    <input class="addAmount-value" type="text" value="$250">
+                                    <span>₦</span>
+                                    <input class="addAmount-value" type="text" value="₦250">
                                 </div>
                                 <div class="amount-group mb-40">
-                                    <button class="amount-btn">$99</button>
-                                    <button class="amount-btn">$125</button>
-                                    <button class="active amount-btn">$250</button>
-                                    <button class="amount-btn">$350</button>
+                                    <button class="amount-btn">₦99</button>
+                                    <button class="amount-btn">₦125</button>
+                                    <button class="active amount-btn">₦250</button>
+                                    <button class="amount-btn">₦350</button>
                                     <button class="amount-btn custom-amount">Custom Amount</button>
                                 </div>
                                 <h3 class="mb-30">Select payment Method</h3>

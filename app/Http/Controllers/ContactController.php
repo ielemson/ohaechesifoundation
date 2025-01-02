@@ -23,10 +23,10 @@ class ContactController extends Controller
             'message' => $validatedData['message'],
         ];
 
-        Mail::send('emails.contact', $emailData, function ($mail) use ($emailData) {
-            $mail->to('recipient@example.com') // Replace with your email
-                 ->subject($emailData['subject']);
-        });
+        // Mail::send('emails.contact', $emailData, function ($mail) use ($emailData) {
+        //     $mail->to('recipient@example.com') // Replace with your email
+        //          ->subject($emailData['subject']);
+        // });
 
         return response()->json(['success' => true]);
     }
