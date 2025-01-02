@@ -1,32 +1,10 @@
 @extends('layouts.admin')
 
 @section('title')
-Our Team
+<a href="{{ route("team_profiles.create") }}">Create Team</a>
 @endsection
 @section('content')
 <ul>
-   {{-- @if (count($profiles)>0)
-   @foreach ($profiles as $profile)
-   <li>
-       <h3>{{ $profile->name }}</h3>
-       <p>{{ $profile->about }}</p>
-       <p>Status: {{ $profile->status }}</p>
-       <a href="{{ route('team_profiles.edit', $profile) }}">Edit</a>
-       <form action="{{ route('team_profiles.destroy', $profile) }}" method="POST" style="display:inline;">
-           @csrf
-           @method('DELETE')
-           <button type="submit">Delete</button>
-       </form>
-   </li>
-@endforeach
-   @else
-      <div class="row">
-    <div class="col-md-6">
-        <a href="{{ route('team_profiles.create') }}">Create Profile</a>
-    </div>
-    </div> 
-   @endif --}}
-
    <div class="row">
     <div class="col-md-12">
        

@@ -2,6 +2,7 @@
 @php
 $setting = \App\Models\Setting::find(1);
 @endphp
+@section('title', 'Our Team')  
 @section("content")
 @include("frontend.include.header")
 @include("frontend.include.side_bar")
