@@ -9,11 +9,9 @@ $setting = \App\Models\Setting::find(1);
 
     <main>
         <!-- Page banner area start here -->
-       @include("frontend.include.page_banner",["bannerImg"=>"banner_inner_page.jpg","header_1"=>"Donate","header_2"=>"Donate Now"])
-        <!-- Page banner area end here -->
-
-          <!-- Blog single area start here -->
-          <section class="blog-single-area pt-120 pb-120">
+       {{-- @include("frontend.include.page_banner",["bannerImg"=>"banner_inner_page.jpg","header_1"=>"Donate","header_2"=>"Donate Now"]) --}}
+        <!-- Page banner area end here --> 
+          {{-- <section class="blog-single-area pt-120 pb-120">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-12 order-2 order-lg-1">
@@ -85,8 +83,27 @@ $setting = \App\Models\Setting::find(1);
                 
                 </div>
             </div>
+        </section> --}}
+        <section class="error-area pt-120 pb-120">
+            <div class="container">
+                <div class="error__item">
+                    <div class="image mb-60">
+                        <img src="{{ asset("assets/images/error/404.png") }}" alt="image">
+                    </div>
+                    <h2>Coming Soon</h2>
+                    <div class="btn-two mt-50">
+                        <span class="btn-circle">
+                        </span>
+                        <a href="{{ route("welcome") }}" class="btn-inner">
+                            <span class="btn-text">
+                                GO BACK HOME
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- Blog single area end here -->
+       
     </main>
 
 @endsection

@@ -1690,8 +1690,8 @@ input {
   transform: translate(-50%, -50%);
 }
 #loading .loading-icon .loading-logo {
-  width: 184px;
-  height: 184px;
+  width: 100px;
+  height: 100px;
   animation: bobble 2s ease-in-out infinite alternate;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

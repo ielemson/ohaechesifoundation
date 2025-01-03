@@ -62,7 +62,7 @@
             <div id="loading-center-absolute">
                 <div class="loading-icon text-center d-flex flex-column align-items-center justify-content-center">
                     <img class="loading-logo" src="{{ asset("images/settings/$setting->website_favicon") }}"
-                        alt="Ohaechesi Foundation">
+                        alt="Ohaechesi Charitable Foundation">
 
                 </div>
             </div>
