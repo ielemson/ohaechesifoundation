@@ -43,11 +43,10 @@
                                 </li>
                                 <li class="mb-3">
                                     <a href="{{ route("ourprograms") }}"><i class="fa-light fa-angles-right me-2"></i> Our Programs
-                                        Event</a>
+                                    </a>
                                 </li>
                                 <li class="mb-3">
-                                    <a href="{{ route("welcome") }}"><i class="fa-light fa-angles-right me-2"></i> Latest
-                                        Blog</a>
+                                    <a href="{{ route("welcome") }}"><i class="fa-light fa-angles-right me-2"></i>Latest Events</a>
                                 </li>
                                 
                             </ul>
@@ -63,7 +62,7 @@
                                             class="fa-solid fa-phone me-1 primary-color"></i>{{ $setting->phone }}</a>
                                 </li>
                                 <li class="mb-3">
-                                    <a href="{{ $setting->email }}"><i class="fa-sharp fa-solid fa-envelope me-1 primary-color"></i>{{ $setting->email }}</a>
+                                    <a href="mailto:{{ $setting->email }}"><i class="fa-sharp fa-solid fa-envelope me-1 primary-color"></i>{{ $setting->email }}</a>
                                 </li>
                                 <li>
                                     <a href="#0"><i class="fa-solid fa-location-dot me-1 primary-color"></i> 
