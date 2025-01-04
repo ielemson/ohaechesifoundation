@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\TeamProfileController;
+use App\Http\Controllers\EventController;
+// use App\Http\Controllers\TeamProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,6 +53,15 @@ Route::group(['middleware' => 'auth'], function() {
 
     // Team Profile :::::::::::::::::::::::::::::::->
     Route::resource('team_profiles', 'TeamProfileController');
+
+
+    // Event Magazine Route Starts Here ::::::::::::::
+		Route::get('event/magazine/view', [EventController::class, 'index'])->name("event.index");
+		Route::get('event/magazine/create', [EventController::class, 'create'])->name("event.create");
+		Route::post('event/magazine/store', [EventController::class, 'store'])->name("event.store");
+		Route::get('event/magazine/edit/{id}', [EventController::class, 'edit'])->name("event.edit");
+		Route::put('event/magazine/update/{id}', [EventController::class, 'update'])->name("event.update");
+		Route::delete('event/magazine/destroy/{id}', [EventController::class, 'destroy'])->name("event.destroy");
 });
 
 });

@@ -57,50 +57,83 @@
                                 <p>Users</p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('user.profile') }}" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    Profile
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route("team_profiles.index") }}" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Team
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('user.profile') }}" class="nav-link">
-                        <i class="nav-icon fas fa-user"></i>
+              
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-cogs"></i>
                         <p>
-                            Profile
+                            Events
+                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route("event.create") }}" class="nav-link">
+                                    <i class="fas fa-bomb nav-icon"></i>
+                                    <p>Create Event</p>
+                                </a>
+                            </li>
+                            
+                        <li class="nav-item">
+                            <a href="{{ route('event.index') }}" class="nav-link">
+                                <i class="fas fa-users-cog nav-icon"></i>
+                                <p>Event List</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route("team_profiles.index") }}" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-cogs"></i>
                         <p>
-                            Team
+                            Setttings
+                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="fas fa-bell nav-icon"></i>
-                    <p>Notifications</p>
-                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-image nav-icon"></i>
+                            <p>Change Profile Photo</p>
+                            </a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="{{ route('userGetPassword') }}" class="nav-link">
+                            <i class="fas fa-lock nav-icon"></i>
+                            <p>Change Password</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route("website-setting.edit") }}" class="nav-link">
+                            <i class="fas fa-lock nav-icon"></i>
+                            <p>Website Settings</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="fas fa-image nav-icon"></i>
-                    <p>Change Profile Photo</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="{{ route('userGetPassword') }}" class="nav-link">
-                    <i class="fas fa-lock nav-icon"></i>
-                    <p>Change Password</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ route("website-setting.edit") }}" class="nav-link">
-                    <i class="fas fa-lock nav-icon"></i>
-                    <p>Website Settings</p>
-                    </a>
-                </li>
+                
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('logout') }}"

@@ -15,15 +15,15 @@
                             <a href="{{ route("welcome") }}" class="logo mb-40">
                                 <img src="{{ asset("images/settings/$setting->website_logo_light") }}" alt="{{ $setting->meta_title }}">
                             </a>
-                            <p class="text-white">
-                                {{ $setting->who_we_are }}
+                            <p class="text-white" style="text-align: justify">
+                                {!! Illuminate\Support\Str::limit($setting->about, 200) !!}
                             </p>
                             <div class="btn-one mt-40">
                                 <span class="btn-circle">
                                 </span>
-                                <a href="{{ route("donatenow") }}" class="btn-inner">
+                                <a href="{{ route("aboutus") }}" class="btn-inner">
                                     <span class="btn-text">
-                                        DONATE NOW
+                                        Read More
                                     </span>
                                 </a>
                             </div>
@@ -42,7 +42,7 @@
                                     </a>
                                 </li>
                                 <li class="mb-3">
-                                    <a href="{{ route("welcome") }}"><i class="fa-light fa-angles-right me-2"></i> Upcoming
+                                    <a href="{{ route("ourprograms") }}"><i class="fa-light fa-angles-right me-2"></i> Our Programs
                                         Event</a>
                                 </li>
                                 <li class="mb-3">
@@ -87,3 +87,4 @@
                 href="{{ route("welcome") }}" class="text-white primary-hover">Ohaechesi Foundation</a></p>
     </div>
 </footer>
+
