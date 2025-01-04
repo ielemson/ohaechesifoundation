@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use App\Models\TeamProfile;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class GeneralController extends Controller
     public function index()
     {
         $teams = TeamProfile::where("status","active")->get();
-        return view("frontend.welcome",compact("teams"));
+        $events = Event::where("status","published")->latest('id')->get();
+        return view("frontend.welcome",compact("teams","events"));
     }
 
     /**
@@ -81,8 +83,11 @@ class GeneralController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function eventdetails($slug)
     {
-        //
+       $event = Event::where("slug",$slug)->first();
+       $events = Event::where("status","published")->latest()->inRandomOrder()->take(5)->get();
+       return view("frontend.event",compact("event","events"));
+
     }
 }

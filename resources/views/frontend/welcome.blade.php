@@ -30,6 +30,11 @@ $setting = \App\Models\Setting::find(1);
        @include("frontend.include.our_team")
         <!-- Profile area end here -->
 @endif
+@if (count($events)> 0)
+       <!-- Profile area start here -->
+       @include("frontend.include.events_partial")
+        <!-- Profile area end here -->
+@endif
         <!-- Project area start here -->
        {{-- @include("frontend.include.projects") --}}
         <!-- Project area end here -->

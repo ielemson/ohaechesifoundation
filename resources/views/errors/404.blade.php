@@ -11,7 +11,7 @@
                     <img src="{{ asset("assets/images/error/404.png") }}" alt="image">
                 </div>
                 <h2>Whoops! This Page got Lost
-                    in converstion</h2>
+                    in conversation</h2>
                 <div class="btn-two mt-50">
                     <span class="btn-circle">
                     </span>

@@ -1,10 +1,10 @@
 <footer class="footer-area secondary-bg overflow-hidden">
     <div class="footer__main-wrp">
         <div class="footer__shape-left wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-            <img class="footer__shape__animation" src="assets/images/shape/footer-shape-left.png" alt="shape">
+            <img class="footer__shape__animation" src="{{ asset("assets/images/shape/footer-shape-left.png") }}" alt="shape">
         </div>
         <div class="footer__shape-right wow slideInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
-            <img class="footer__shape__animation-right" src="assets/images/shape/footer-shape-right.png"
+            <img class="footer__shape__animation-right" src="{{ asset("assets/images/shape/footer-shape-right.png") }}"
                 alt="shape">
         </div>
         <div class="container">

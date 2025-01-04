@@ -1,12 +1,5 @@
 /*-----------------------------------------------------------------
 
-Template Name:  Sadaka - Non Profit Charity HTML Template
-Author:  Gramentheme
-Author URI: https://themeforest.net/user/gramentheme/portfolio
-Developer: Kawser Ahmed Roni
-Version: 1.0.0
-Description: Sadaka - Non Profit Charity HTML Template
-
 -------------------------------------------------------------------
 CSS TABLE OF CONTENTS
 -------------------------------------------------------------------
@@ -181,7 +174,7 @@ CSS TABLE OF CONTENTS
 		},
 		breakpoints: {
 			1200: {
-				slidesPerView: 4,
+				slidesPerView: 3,
 			},
 			992: {
 				slidesPerView: 3,

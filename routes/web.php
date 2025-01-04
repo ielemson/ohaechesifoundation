@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\GeneralController;
 // use App\Http\Controllers\TeamProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,7 @@ Route::get('/donate', [App\Http\Controllers\GeneralController::class, 'donatenow
 Route::get('/team-single/{slug}', [App\Http\Controllers\GeneralController::class, 'singleteam'])->name('team.single');
 Route::get('/ourprograms', [App\Http\Controllers\GeneralController::class, 'ourprograms'])->name('ourprograms');
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
+Route::get('/event/view/{slug}', [GeneralController::class, 'eventdetails'])->name('events.details');
 Route::get('/reload-captcha', [ContactController::class, 'reloadCaptcha']);
 
 Route::group(['middleware' => 'auth'], function() {
