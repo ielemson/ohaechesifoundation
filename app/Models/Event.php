@@ -9,7 +9,7 @@ class Event extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title', 'event_banner', 'content', 'gallery','slug','status','location','meta_title','meta_keywords','meta_description'
+        'title', 'event_banner', 'content', 'gallery','video','slug','status','location','meta_title','meta_keywords','meta_description'
     ];
    
     protected $casts = [

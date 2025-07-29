@@ -4,11 +4,11 @@
         <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-40">
             <div class="section-header">
                 <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <i class="fa-regular fa-angles-left pe-1"></i>Recent Events<i
+                    <i class="fa-regular fa-angles-left pe-1"></i>Our Events<i
                         class="fa-regular fa-angles-right ps-1"></i>
                 </h5>
                 <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    Our Events / Happenings
+                    Current Events
                 </h2>
             </div>
             <div class="arry-btn wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">

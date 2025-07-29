@@ -37,7 +37,8 @@ Route::group(['middleware' => 'auth'], function() {
     Route::resource('user', 'UserController');
 
     Route::resource('permission', 'PermissionController');
-
+    Route::resource('videos', 'VideoController');
+    Route::resource('gallery', 'GalleryItemController');
 
     Route::get('/profile', 'UserController@profile')->name('user.profile');
 

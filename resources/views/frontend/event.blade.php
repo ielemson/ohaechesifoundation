@@ -22,6 +22,9 @@ $setting = \App\Models\Setting::find(1);
                                     <img src="{{ asset('assets/images/banner/' .$event->event_banner) }}" alt="image">
                                     <span class="blog-tag">{{ Carbon\Carbon::parse($event->created_at)->diffForHumans() }}</span>
                                 </div>
+
+                                {{-- Display video if available --}}
+
                                 <div class="blog__content p-0">
                                     <h4 class="mt-20 mb-20 fs-30">{{ $event->title }}</h4>
                                     <ul class="pb-4 bor-bottom">
@@ -53,7 +56,17 @@ $setting = \App\Models\Setting::find(1);
                                     </ul>
                                     <p class="mb-20 mt-20" style="text-align: justify">
                                         {!! $event->content !!}
-                                    </p>    
+                                    </p>   
+                                    
+                                    @if ($event->video)
+                            <div class="event-video mt-4">
+                            <video width="100%" height="auto" controls>
+                            <source src="{{ asset('assets/videos/event_videos/' . $event->video) }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                            </div>
+                            @endif
+
                                     @if ($event->gallery)
                                     @php
                                         $galleryImages = json_decode($event->gallery, true);
