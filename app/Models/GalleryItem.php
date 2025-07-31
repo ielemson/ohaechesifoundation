@@ -12,5 +12,13 @@ class GalleryItem extends Model
         'title',
         'type', // 'image' or 'video'
         'file_path',
+        'location'
     ];
+
+    public function event()
+{
+    return $this->belongsTo(Event::class);
+}
+
+
 }

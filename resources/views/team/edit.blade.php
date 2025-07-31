@@ -21,7 +21,7 @@ Team
                         <input type="text" name="name" value="{{ old('name', $teamProfile->name ?? '') }}" class="form-control @error('name') is-invalid @enderror" required>
                     
                         <label for="about">About:</label>
-                        <textarea name="about" class="form-control @error('about') is-invalid @enderror">{{ old('about', $teamProfile->about ?? '') }}</textarea>
+                        <textarea name="about" class="form-control summernote @error('about') is-invalid @enderror">{{ old('about', $teamProfile->about ?? '') }}</textarea>
                     
                        <div class="row">
                         <div class="col-md-6">
@@ -73,19 +73,28 @@ Team
     </div>
 </section>
 
-@push("js_app")
-    <!-- Place the first <script> tag in your HTML's <head> -->
-<script src="https://cdn.tiny.cloud/1/vr3y2q88fqi6tlc1njmacrchhy2lt40zklrrnv3d8im4jjab/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-
-<!-- Place the following <script> and <textarea> tags your HTML's <body> -->
-<script>
-  tinymce.init({
-    selector: 'textarea',
-    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-  });
-</script>
+@push('js_app')
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <script>
+        $('.summernote').summernote({
+            placeholder: 'Please ensure to paste from MS word, Notepad. Avoid pasting directly from other websites.',
+            tabsize: 2,
+            height: 150,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ]
+        });
+    </script>
 @endpush
+
 @endsection
 
 

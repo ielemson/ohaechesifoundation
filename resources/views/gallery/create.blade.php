@@ -14,10 +14,18 @@
               <form action="{{ route('gallery.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
 
-        <div class="mb-3">
-            <label for="title" class="form-label">Title (optional)</label>
-            <input type="text" name="title" class="form-control">
+       <div class="row">
+        <div class="col-md-6"> <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" placeholder="Gallery Title">
+        </div></div>
+        <div class="col-md-6">
+             <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="location" class="form-control" placeholder="Location">
         </div>
+        </div>
+       </div>
 
         <div class="mb-3">
             <label for="file" class="form-label">Upload Image or Video</label>

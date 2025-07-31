@@ -13,4 +13,10 @@ class Video extends Model
         'type', // 'image' or 'video'
         'file_path',
     ];
+
+    // EventVideo.php
+public function event()
+{
+    return $this->belongsTo(Event::class);
+}
 }

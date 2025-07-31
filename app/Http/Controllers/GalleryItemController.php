@@ -22,6 +22,7 @@ class GalleryItemController extends Controller
     {
         $request->validate([
             'title' => 'nullable|string|max:255',
+            'location' => 'nullable|string|max:255',
             'file' => 'required|file|mimes:jpeg,png,jpg,mp4,webm,ogg|max:51200', // 50MB max
         ]);
 
@@ -36,6 +37,7 @@ class GalleryItemController extends Controller
         GalleryItem::create([
             'title' => $request->title,
             'type' => $type,
+            'location' => $request->location,
             'file_path' => $filename,
         ]);
 
@@ -50,12 +52,18 @@ class GalleryItemController extends Controller
     public function update(Request $request, GalleryItem $gallery)
     {
         $request->validate([
+            'location' => 'nullable|string|max:255',
             'title' => 'nullable|string|max:255',
             'file' => 'nullable|file|mimes:jpeg,png,jpg,mp4,webm,ogg|max:51200',
         ]);
 
-        $data = ['title' => $request->title];
-
+        $data = [
+            'title' => $request->title,
+            'location' => $request->location
+    
+    ];
+        // $data = [];
+     
         if ($request->hasFile('file')) {
             // Delete old file
             $oldPath = $gallery->type === 'video'

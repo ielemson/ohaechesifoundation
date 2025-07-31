@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use App\Models\GalleryItem;
 use App\Models\TeamProfile;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,9 @@ class GeneralController extends Controller
     {
         $teams = TeamProfile::where("status","active")->get();
         $events = Event::where("status","published")->latest('id')->get();
-        return view("frontend.welcome",compact("teams","events"));
+         $galleryItems = GalleryItem::latest()->get();
+        //  dd($galleryItems);
+        return view("ohaechesi.welcome",compact("teams","events","galleryItems"));
     }
 
     /**
@@ -27,7 +30,7 @@ class GeneralController extends Controller
      */
     public function contactus()
     {
-        return view("frontend.contactus");
+        return view("ohaechesi.contactus");
     }
 
     /**
@@ -39,7 +42,7 @@ class GeneralController extends Controller
     public function aboutus()
     {
         $teams = TeamProfile::where("status","active")->get();
-        return view("frontend.aboutus",compact("teams"));
+        return view("ohaechesi.about_us",compact("teams"));
     }
 
     /**
@@ -50,7 +53,7 @@ class GeneralController extends Controller
      */
     public function donatenow()
     {
-        return view("frontend.donatenow");
+        return view("ohaechesi.donation");
     }
 
     /**

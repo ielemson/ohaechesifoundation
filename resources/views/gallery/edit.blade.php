@@ -15,9 +15,19 @@
         @csrf
         @method('PUT')
 
-        <div class="mb-3">
-            <label for="title">Title (optional)</label>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+            <label for="title">Title</label>
             <input type="text" name="title" class="form-control" value="{{ $item->title }}">
+        </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+            <label for="location">Location</label>
+            <input type="text" name="location" class="form-control" value="{{ $item->location }}">
+        </div>
+            </div>
         </div>
 
         <div class="mb-3">
