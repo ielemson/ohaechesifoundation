@@ -15,7 +15,7 @@
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 view-wrapper">
               <div class="single-team h-calc">
                 <div class="team-img">
-                  <a href="volunteer-details.html" >
+                  <a href="{{ route("team.single",$team->slug) }}" >
                     <img src="{{ asset('assets/images/team/' .$team->picture) }}" class="img-fluid w-100" alt="img">
                   </a>
                 </div>
@@ -24,7 +24,7 @@
                     <div class="team-info-title mb-8">
                       <div class="d-flex gap-40 align-items-center">
                         <div class="content">
-                          <h4 class="title text-capitalize"><a href="volunteer-details.html">{{ $team->name }}</a></h4>
+                          <h4 class="title text-capitalize"><a href="{{ route("team.single",$team->slug) }}">{{ $team->name }}</a></h4>
                           <p class="pera">{{ $team->position }}</p>
                         </div>
                         <div class="social">

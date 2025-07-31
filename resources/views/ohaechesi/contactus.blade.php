@@ -2,6 +2,11 @@
 @php
 $setting = \App\Models\Setting::find(1);
 @endphp
+
+@section("title")
+Contact Us
+@endsection
+
 @section("main")
 @include("ohaechesi.partials.bread_crumb",['title_1'=>"Contact",'title_2'=>'Contact Us'])
      

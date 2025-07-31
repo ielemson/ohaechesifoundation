@@ -2,6 +2,10 @@
 @php
     $setting = \App\Models\Setting::find(1);
 @endphp
+
+@section("title")
+Donate Today
+@endsection
 @section('main')
     @include('ohaechesi.partials.bread_crumb', ['title_1' => 'Donation', 'title_2' => 'Donate to Us'])
 

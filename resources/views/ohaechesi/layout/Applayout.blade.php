@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-    <title>{{ $setting->website_title }} | @yield('title', '')</title>
+    <title>{{ $setting->website_title }} :: @yield('title', '')</title>
     <!-- Favicon img -->
     <link rel="shortcut icon" href="{{ asset("images/settings/$setting->website_favicon") }}">
     <meta charset="UTF-8">

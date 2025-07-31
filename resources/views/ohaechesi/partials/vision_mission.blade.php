@@ -1,5 +1,5 @@
 
-<section class="question-area bottom-padding">
+<section class="question-area pt-5 pb-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 my-auto">

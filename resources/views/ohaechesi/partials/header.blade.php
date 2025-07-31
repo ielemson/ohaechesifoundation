@@ -46,7 +46,7 @@
                                         <!-- search button -->
                                         {{-- <a href="javascript:void(0)" class="rounded-btn search-bar"><i
                                                 class="ri-search-line"></i></a> --}}
-                                        <a href="login.html" class="btn-primary-fill pill-btn">Log in</a>
+                                        <a href="javascript:;" class="btn-primary-fill pill-btn">Account</a>
                                     </div>
                                 </div>
                             </div>

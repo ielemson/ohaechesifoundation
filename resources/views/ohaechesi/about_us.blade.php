@@ -2,6 +2,11 @@
 @php
 $setting = \App\Models\Setting::find(1);
 @endphp
+
+@section("title")
+About Us
+@endsection
+
 @section("main")
 @include("ohaechesi.partials.bread_crumb",['title_1'=>"About",'title_2'=>'About Us'])
         <!-- About us Area S t a r t -->
@@ -20,18 +25,8 @@ $setting = \App\Models\Setting::find(1);
              
             </div>
             <div class="col-lg-5">
-              <div class="position-relative h-100">
-                <div class="play-button">
-                  <a id="play-video-two" class="video-play-button-two d-none d-lg-block d-none d-lg-block" href="javascript:void(0)">
-                    <span></span>
-                  </a>
-
-                  <div id="video-overlay" class="video-overlay">
-                    <a class="video-overlay-close">&times;</a>
-                  </div>
-                </div>
-                <div >
-                  <img class="w-100 d-none d-lg-block" src="assets/images/gallery/about-3.png" alt="image">
+              
+                  <img class="w-100 d-none d-lg-block" src="{{asset("assets/images/hero/ohaechesi-foundations.jpg")}}" alt="image">
                 </div>
               </div>
             </div>

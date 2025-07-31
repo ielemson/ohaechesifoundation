@@ -65,7 +65,7 @@ class GeneralController extends Controller
     public function singleteam($slug)
     {
         $teamprofile  = TeamProfile::where("slug",$slug)->first();
-        return view("frontend.team_profile",compact("teamprofile"));
+        return view("ohaechesi.team_details",compact("teamprofile"));
     }
 
     /**

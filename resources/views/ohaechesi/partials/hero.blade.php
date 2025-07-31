@@ -11,7 +11,7 @@
                                     Ohaechesi Foundation is a legacy initiative by Chief Godwin Ohaechesi & Lolo Ngozi Ohaechesi, dedicated to delivering sustainable impact through education support, rural healthcare, youth development, and community empowerment.
                                 </p>
                                 <div class="d-flex gap-20 flex-wrap">
-                                    <a href="javascript:;" class="btn-primary-fill hero-btn wow fadeInLeft"
+                                    <a href="{{route("donatenow")}}" class="btn-primary-fill hero-btn wow fadeInLeft"
                                         data-wow-delay="0.4s">Donate Now</a>
                                     <a href="{{route("aboutus")}}" class="btn-tertiary-fill hero-btn wow fadeInRight"
                                         data-wow-delay="0.4s">About Us</a>
