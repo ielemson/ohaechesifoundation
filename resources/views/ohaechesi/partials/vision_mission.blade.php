@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <img class="w-100 d-none d-lg-block tilt-effect" src="{{ asset("assets/images/faq/mission-vision.jpg")}}" alt="Our Mission and Vision">
+                <img class="w-100 d-none d-lg-block tilt-effect" src="{{ asset("assets/images/faq/our-mission-vision.jpg")}}" alt="Our Mission and Vision">
             </div>
         </div>
     </div>
