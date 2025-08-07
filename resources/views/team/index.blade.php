@@ -20,7 +20,7 @@ Team
                            @endif
                            <div class="card-body">
                                <h5 class="card-title">{{ $team->name }}</h5>
-                               <p class="card-text">{!! substr($team->about , 0, 100) !!}</p>
+                               {{-- <p class="card-text">{!! substr($team->about , 0, 100) !!}</p> --}}
                                <p class="card-text"><strong>Status:</strong> {{ ucfirst($team->status) }}</p>
                                <a href="{{ route("team_profiles.edit", $team->id) }}" class="btn btn-warning">Edit</a>
                                <form action="{{ route("team_profiles.destroy", $team->id) }}" method="POST" class="d-inline">

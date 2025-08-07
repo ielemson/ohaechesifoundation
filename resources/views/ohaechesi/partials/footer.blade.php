@@ -15,7 +15,7 @@
                                 <nav>
                                     <ul class="listing" id="navigation2">
                                         <li class="single-list"><a href="{{url("/")}}" class="single">Home</a></li>
-                                        <li class="single-list"><a href="donation.html" class="single">Donation</a></li>
+                                        <li class="single-list"><a href="{{route("donatenow")}}" class="single">Donation</a></li>
                                         <li class="single-list"><a href="javascript:;" class="single">Events</a></li>
                                         <li class="single-list"><a href="{{route("aboutus")}}" class="single">About Us</a></li>
                                         <li class="single-list"><a href="{{route("contactus")}}" class="single">Contact</a>
@@ -37,17 +37,17 @@
                             <h4 class="title">Explore Links</h4>
                             <ul class="imp-link">
                                 <li class="single-list">
-                                    <a class="single" href="{{route("aboutus")}}">About Company</a>
+                                    <a class="single" href="{{route("aboutus")}}">Ohaechesi Foundation</a>
                                 </li>
                                 <li class="single-list">
-                                    <a class="single" href="javascript:void(0)">Latest Projects</a>
+                                    <a class="single" href="javascript:void(0)">Latest Events</a>
                                 </li>
-                                <li class="single-list">
+                                {{-- <li class="single-list">
                                     <a class="single" href="javascript:void(0)">Latest Blog</a>
-                                </li>
-                                <li class="single-list">
+                                </li> --}}
+                                {{-- <li class="single-list">
                                     <a class="single" href="javascript:void(0)">Our Testimonials</a>
-                                </li>
+                                </li> --}}
                                 <li class="single-list">
                                     <a class="single" href="javascript:void(0)">Our Mission</a>
                                 </li>
@@ -59,17 +59,17 @@
                             <h4 class="title">Get Support</h4>
                             <ul class="imp-link">
                                 <li class="single-list">
-                                    <a class="single" href="{{route("aboutus")}}">About</a>
+                                    <a class="single" href="{{route("aboutus")}}">About Us</a>
                                 </li>
                                 <li class="single-list">
-                                    <a class="single" href="javascript:void(0)">How it Works</a>
+                                    <a class="single" href="{{route("aboutus")}}">Our Vision & Mission</a>
                                 </li>
-                                <li class="single-list">
+                                {{-- <li class="single-list">
                                     <a class="single" href="javascript:void(0)">Knowledge Hub</a>
-                                </li>
-                                <li class="single-list">
+                                </li> --}}
+                                {{-- <li class="single-list">
                                     <a class="single" href="javascript:void(0)">Success Stories</a>
-                                </li>
+                                </li> --}}
                                 <li class="single-list">
                                     <a class="single" href="{{route("contactus")}}">Contact</a>
                                 </li>
